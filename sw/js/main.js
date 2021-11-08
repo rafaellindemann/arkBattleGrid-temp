@@ -259,7 +259,7 @@ function criarNomeDoArquivo(nomeDino)
 function mostrarCarta1()
     {
         var nome = criarNomeDoArquivo(mao1[0].nome)
-        document.getElementById('imgFoto1').setAttribute('src', nome.trim())
+        document.getElementById('imgFoto1').setAttribute('src', nome.replace(" ",  ""))
         document.getElementById('divNome1').innerHTML = `${mao1[0].nome}`
         document.getElementById('divVida1').innerHTML = `Vida: ${mao1[0].vida}`
         document.getElementById('divEstamina1').innerHTML = `Estamina: ${mao1[0].estamina}`
@@ -274,7 +274,7 @@ function mostrarCarta1()
     function mostrarCarta2()
     {
         var nome = criarNomeDoArquivo(mao2[0].nome)
-        document.getElementById('imgFoto2').setAttribute('src', nome.trim())
+        document.getElementById('imgFoto2').setAttribute('src', nome.replace(" ",  ""))
         document.getElementById('divNome2').innerHTML = `${mao2[0].nome}`
         document.getElementById('divVida2').innerHTML = `Vida: ${mao2[0].vida}`
         document.getElementById('divEstamina2').innerHTML = `Estamina: ${mao2[0].estamina}`
