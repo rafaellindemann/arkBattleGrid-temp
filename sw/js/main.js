@@ -259,7 +259,7 @@ function criarNomeDoArquivo(nomeDino)
 function mostrarCarta1()
     {
         var nome = criarNomeDoArquivo(mao1[0].nome)
-        document.getElementById('imgFoto1').setAttribute('src', nome)
+        document.getElementById('imgFoto1').setAttribute('src', nome.trim())
         document.getElementById('divNome1').innerHTML = `${mao1[0].nome}`
         document.getElementById('divVida1').innerHTML = `Vida: ${mao1[0].vida}`
         document.getElementById('divEstamina1').innerHTML = `Estamina: ${mao1[0].estamina}`
