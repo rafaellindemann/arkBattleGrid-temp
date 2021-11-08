@@ -274,7 +274,7 @@ function mostrarCarta1()
     function mostrarCarta2()
     {
         var nome = criarNomeDoArquivo(mao2[0].nome)
-        document.getElementById('imgFoto2').setAttribute('src', nome)
+        document.getElementById('imgFoto2').setAttribute('src', nome.trim())
         document.getElementById('divNome2').innerHTML = `${mao2[0].nome}`
         document.getElementById('divVida2').innerHTML = `Vida: ${mao2[0].vida}`
         document.getElementById('divEstamina2').innerHTML = `Estamina: ${mao2[0].estamina}`
